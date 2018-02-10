@@ -1,0 +1,14 @@
+[user]
+	name = Steven Wang
+	email = steven.wang@arm.com
+[alias]
+	co = checkout
+	cm = commit
+	br = branch
+	st = status
+	ps = push
+	pl = pull
+	mg = merge
+	fh = fetch
+[color]
+	ui = auto
