@@ -10,5 +10,6 @@
 	pl = pull
 	mg = merge
 	fh = fetch
+	sh = show
 [color]
 	ui = auto
