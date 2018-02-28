@@ -1,6 +1,3 @@
-set tabstop=4
-set softtabstop=4
-set expandtab
 set number
 
 set mouse=a
@@ -14,6 +11,10 @@ set showmatch
 set tags=./tags;
 
 filetype indent on
+
+autocmd filetype python,sh set ts=4 sw=4 et
+autocmd BufNewFile,BufRead /work/bsp-build/*/aosp/* set tabstop=4 shiftwidth=4 expandtab
+autocmd BufNewFile,BufRead /work/bsp-build-ro/*/aosp/* set tabstop=4 shiftwidth=4 expandtab
 
 colorscheme peachpuff
 
