@@ -11,5 +11,6 @@
 	mg = merge
 	fh = fetch
 	sh = show
+	cl = clone
 [color]
 	ui = auto
