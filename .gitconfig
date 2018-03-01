@@ -12,5 +12,6 @@
 	fh = fetch
 	sh = show
 	cl = clone
+	df = diff
 [color]
 	ui = auto
