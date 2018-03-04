@@ -15,3 +15,5 @@
 	df = diff
 [color]
 	ui = auto
+[credential]
+	helper = store

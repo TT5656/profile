@@ -9,6 +9,7 @@ set showcmd
 set showmatch
 
 set tags=./tags;
+set csre
 
 filetype indent on
 
