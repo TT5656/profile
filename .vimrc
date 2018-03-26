@@ -11,7 +11,7 @@ set showmatch
 set tags=./tags;
 set csre
 
-filetype indent on
+filetype plugin indent on
 
 autocmd filetype python,sh set ts=4 sw=4 et
 autocmd BufNewFile,BufRead /work/bsp-build/*/aosp/* set tabstop=4 shiftwidth=4 expandtab
