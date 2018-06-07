@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -132,6 +132,6 @@ alias serialUSB0='sudo picocom -b 115200 /dev/ttyUSB0'
 alias serialUSB1='sudo picocom -b 115200 /dev/ttyUSB1'
 alias serialS0='sudo picocom -b 115200 /dev/ttyS0'
 
-export MPG_SH=ssh://sha-winshare.shanghai.arm.com/projects/mpd/mpg-bsp/gerrit/
+export MPG_SH=ssh://sha-winshare.shanghai.arm.com/projects/mpd/mpg-bsp/gerrit
 export DDK_SH=ssh://sha-winshare.shanghai.arm.com/projects/mpd/mpd-gerrit/midgard_sw/driver.git
 PATH=$PATH:/home/stewan02/Projects/RaspberryPi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin
