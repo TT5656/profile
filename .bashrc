@@ -132,6 +132,6 @@ alias serialUSB0='sudo picocom -b 115200 /dev/ttyUSB0'
 alias serialUSB1='sudo picocom -b 115200 /dev/ttyUSB1'
 alias serialS0='sudo picocom -b 115200 /dev/ttyS0'
 
-export MPG_SH=ssh://sha-winshare.shanghai.arm.com/projects/mpd/mpg-bsp/gerrit
+export MPG_SH=ssh://sha-winshare.shanghai.arm.com/projects/mpd/mpg-bsp/gerrit/
 export DDK_SH=ssh://sha-winshare.shanghai.arm.com/projects/mpd/mpd-gerrit/midgard_sw/driver.git
 PATH=$PATH:/home/stewan02/Projects/RaspberryPi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin
