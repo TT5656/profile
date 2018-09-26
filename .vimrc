@@ -24,5 +24,7 @@ let b:match_words='\<ifndef\>\|\<ifdef\>\|\<ifeq\>\|\<ifneq\>:\<else\>:\<endif\>
 
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
+let Tlist_Use_Right_Window=1
+let Tlist_WinWidth=40
 
 nnoremap <silent> <F8> :TlistToggle<CR>
