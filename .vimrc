@@ -23,7 +23,33 @@ let b:match_words='\<ifndef\>\|\<ifdef\>\|\<ifeq\>\|\<ifneq\>:\<else\>:\<endif\>
 
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
-let Tlist_Use_Right_Window=1
-let Tlist_WinWidth=40
 
-nnoremap <silent> <F8> :TlistToggle<CR>
+" winmanager
+let g:winManagerWindowLayout='NERDTree|TagList'
+
+" NERDTree
+let g:NERDTree_title='NERD Tree'
+function! NERDTree_Start()
+    exec 'NERDTree'
+endfunction
+
+function! NERDTree_IsValid()
+    return 1
+endfunction
+
+nnoremap <silent> <F8> :WMToggle<CR>
+
+" Close NERDTREE window if it's the only window left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Quit vim when no normal buffer exists anymore
+"autocmd bufenter * if 0 == len(filter(range(1, winnr('$')), 'empty(getbufvar(winbufnr(v:val), "&bt"))')) | qa! | endif
+
+" vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-scripts/winmanager'
+Plug 'vim-scripts/Conque-GDB'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+call plug#end()
