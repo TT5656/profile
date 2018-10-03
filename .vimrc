@@ -1,5 +1,4 @@
 set number
-
 set mouse=a
 set incsearch
 set hlsearch
@@ -7,7 +6,7 @@ set cursorline
 set wildmenu
 set showcmd
 set showmatch
-
+set hidden
 set tags=./tags;
 
 filetype plugin indent on
