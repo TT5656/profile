@@ -18,3 +18,5 @@
 	ui = auto
 [credential]
 	helper = store
+[push]
+	default = simple

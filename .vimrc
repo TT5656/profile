@@ -23,6 +23,7 @@ let b:match_words='\<ifndef\>\|\<ifdef\>\|\<ifeq\>\|\<ifneq\>:\<else\>:\<endif\>
 
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
+let Tlist_WinWidth=40
 
 " winmanager
 let g:winManagerWindowLayout='NERDTree|TagList'
@@ -37,6 +38,7 @@ function! NERDTree_IsValid()
     return 1
 endfunction
 
+nnoremap <silent> <F2> :TlistToggle<CR>
 nnoremap <silent> <F8> :WMToggle<CR>
 
 " Close NERDTREE window if it's the only window left
