@@ -27,6 +27,7 @@ let Tlist_WinWidth=40
 
 " winmanager
 let g:winManagerWindowLayout='NERDTree|TagList'
+let g:winManagerWidth=40
 
 " NERDTree
 let g:NERDTree_title='NERD Tree'
