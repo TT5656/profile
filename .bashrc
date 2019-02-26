@@ -128,6 +128,11 @@ alias up7='cd ../../../../../../..'
 alias up8='cd ../../../../../../../..'
 alias up9='cd ../../../../../../../../..'
 
+alias cb='cd /work/bsp-build'
+alias cbo='cd /work/bsp-build-ro'
+
+alias g='git'
+
 alias serialUSB0='sudo picocom -b 115200 /dev/ttyUSB0'
 alias serialUSB1='sudo picocom -b 115200 /dev/ttyUSB1'
 alias serialS0='sudo picocom -b 115200 /dev/ttyS0'
