@@ -17,6 +17,9 @@
 	s = status
 	b = branch
 	d = diff
+	l = log
+	f = fetch
+	m = merge
 [color]
 	ui = auto
 [credential]
