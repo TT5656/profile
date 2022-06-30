@@ -14,8 +14,6 @@ filetype plugin indent on
 highlight BadWhitespace ctermbg=red guibg=darkred
 
 autocmd filetype python,sh set ts=4 sw=4 et
-autocmd BufNewFile,BufRead /work/bsp-build/*/aosp/* set tabstop=4 shiftwidth=4 expandtab
-autocmd BufNewFile,BufRead /work/bsp-build-ro/*/aosp/* set tabstop=4 shiftwidth=4 expandtab
 autocmd BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 packadd! matchit
@@ -39,8 +37,12 @@ function! NERDTree_IsValid()
     return 1
 endfunction
 
+let NERDTreeIgnore=['\.o$','\.ko$','\.a$']
+
 nnoremap <silent> <F2> :TlistToggle<CR>
 nnoremap <silent> <F8> :WMToggle<CR>
+nnoremap <silent> <Leader>m :MBEFocus<CR>
+"nnoremap <silent> <F8> :if IsWinManagerVisible() <BAR> WMToggle<CR> <BAR> else <BAR> WMToggle<CR>:q<CR> endif<CR>
 
 " Close NERDTREE window if it's the only window left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -53,6 +55,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-scripts/winmanager'
 Plug 'vim-scripts/Conque-GDB'
+Plug 'fholgado/minibufexpl.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 call plug#end()
